@@ -1,9 +1,3 @@
-# Update notes
-A sample project using Dagger. The codebase is updated to make it previewable in [Mirror Sandbox](jimulabs.com/2015/01/building-android-animations-mirror-sandbox-piecewise/).  Related changes are in [these commits](https://github.com/jimulabs/u2020-mirror/compare/0a7b747...742b3d25e35391cb6e4130bd2a20cc859094cdd0).
-
-Below is the original README.
-
-
 Mirror Directory Layout
 -----------------------------------------------
 
