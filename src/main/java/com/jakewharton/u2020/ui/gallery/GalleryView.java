@@ -5,6 +5,8 @@ import android.util.AttributeSet;
 import android.widget.AbsListView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+
+import com.jakewharton.u2020.GalleryViewBox;
 import com.jakewharton.u2020.R;
 import com.jakewharton.u2020.U2020App;
 import com.jakewharton.u2020.data.GalleryDatabase;
@@ -30,8 +32,8 @@ public class GalleryView extends BetterViewAnimator {
 
   public GalleryView(Context context, AttributeSet attrs) {
     super(context, attrs);
-    U2020App.get(context).inject(this);
-
+//    U2020App.get(context).inject(this);
+    GalleryViewBox.getObjectGraph(context).inject(this);
     adapter = new GalleryAdapter(context, picasso);
   }
 

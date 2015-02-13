@@ -40,6 +40,8 @@ dependencies {
   compile 'io.reactivex:rxandroid:0.23.0'
 
   compile 'com.etsy.android.grid:library:1.0.3'
+
+  debugCompile 'com.jimulabs.mirrorsandbox:mirror-sandbox:0.1.+'
 }
 
 def gitSha = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()
