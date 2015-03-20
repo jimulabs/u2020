@@ -41,7 +41,7 @@ dependencies {
 
   compile 'com.etsy.android.grid:library:1.0.3'
 
-  debugCompile 'com.jimulabs.mirrorsandbox:mirror-sandbox:0.1.+'
+  compile 'com.jimulabs.mirrorsandbox:mirror-sandbox:0.2.0'
 }
 
 def gitSha = 'git rev-parse --short HEAD'.execute([], project.rootDir).text.trim()

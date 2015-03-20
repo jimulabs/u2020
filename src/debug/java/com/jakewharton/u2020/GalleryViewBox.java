@@ -12,7 +12,7 @@ import com.jakewharton.u2020.data.api.DebugApiModule;
 import com.jakewharton.u2020.ui.DebugUiModule;
 import com.jakewharton.u2020.ui.UiModule;
 import com.jakewharton.u2020.ui.gallery.GalleryView;
-import com.jimulabs.mirrorsandbox.MirrorAnimatorSandbox;
+import com.jimulabs.mirrorsandbox.MirrorSandboxBase;
 
 import dagger.Module;
 import dagger.ObjectGraph;
@@ -21,14 +21,13 @@ import dagger.Provides;
 /**
  * Created by lintonye on 15-02-03.
  */
-public class GalleryViewBox extends MirrorAnimatorSandbox {
+public class GalleryViewBox extends MirrorSandboxBase {
     public GalleryViewBox(View root) {
         super(root);
     }
 
     @Override
-    public void enterSandbox() {
-
+    public void $onLayoutDone(View view) {
     }
 
     @Module(
